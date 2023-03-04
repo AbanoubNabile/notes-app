@@ -18,11 +18,14 @@ class CustomAppBar extends StatelessWidget {
   }
 }
 
-class CustomSearchIcoin extends StatelessWidget {
-  const CustomSearchIcoin({super.key});
+class CustomSearchIcon extends StatelessWidget {
+  const CustomSearchIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: 45,
+      width: 45,
+    );
   }
 }
