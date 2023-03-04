@@ -7,7 +7,7 @@ class NotesVieswBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [CustomAppBar()],
+      children: [const CustomAppBar()],
     );
   }
 }
