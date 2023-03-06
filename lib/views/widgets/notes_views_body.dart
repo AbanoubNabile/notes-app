@@ -31,9 +31,15 @@ class NoteItem extends StatelessWidget {
       child: Column(
         children: [
           ListTile(
-            title: Text('Flutter Tips'),
-            subtitle: Text('build your career with Abanoub Nabil'),
-          )
+              title: Text('Flutter Tips'),
+              subtitle: Text('build your career with Abanoub Nabil'),
+              trailing: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.delete,
+                  color: Colors.black,
+                ),
+              ))
         ],
       ),
     );
