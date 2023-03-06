@@ -6,13 +6,16 @@ class NotesVieswBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 50,
-        ),
-        const CustomAppBar()
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 20),
+      child: Column(
+        children: [
+          SizedBox(
+            height: 50,
+          ),
+          const CustomAppBar()
+        ],
+      ),
     );
   }
 }
