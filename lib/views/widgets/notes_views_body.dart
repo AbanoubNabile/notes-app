@@ -29,7 +29,11 @@ class NoteItem extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.blue, borderRadius: BorderRadius.circular(16)),
       child: Column(
-        children: [ListTile()],
+        children: [
+          ListTile(
+            title: Text('Flutter Tips'),
+          )
+        ],
       ),
     );
   }
