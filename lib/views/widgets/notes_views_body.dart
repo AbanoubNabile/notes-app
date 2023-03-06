@@ -16,20 +16,20 @@ class NotesVieswBody extends StatelessWidget {
             height: 50,
           ),
           const CustomAppBar(),
-
+          Expanded(child: NoteslistView())
         ],
       ),
     );
   }
 }
 
-
-
 class NoteslistView extends StatelessWidget {
   const NoteslistView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder :(context,index))
+    return ListView.builder(itemBuilder: (context, index) {
+      return const NoteItem();
+    });
   }
 }
