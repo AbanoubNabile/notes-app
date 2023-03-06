@@ -13,7 +13,8 @@ class NotesVieswBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          const CustomAppBar()
+          const CustomAppBar(),
+          NoteItem()
         ],
       ),
     );
@@ -39,7 +40,8 @@ class NoteItem extends StatelessWidget {
                   Icons.delete,
                   color: Colors.black,
                 ),
-              ))
+              )),
+          Text('March 6  2023', style: TextStyle(color: Colors.black))
         ],
       ),
     );
