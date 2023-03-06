@@ -28,6 +28,9 @@ class NoteItem extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+      child: Column(
+        children: [ListTile()],
+      ),
     );
   }
 }
