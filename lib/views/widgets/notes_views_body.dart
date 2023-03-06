@@ -7,7 +7,7 @@ class NotesVieswBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20),
+      padding: const EdgeInsets.only(left: 24, right: 24),
       child: Column(
         children: [
           SizedBox(
@@ -17,5 +17,14 @@ class NotesVieswBody extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class NoteItem extends StatelessWidget {
+  const NoteItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
