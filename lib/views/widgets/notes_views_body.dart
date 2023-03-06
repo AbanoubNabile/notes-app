@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/widgets/custom_app_bar.dart';
 
+import 'custom_note_item.dart';
+
 class NotesVieswBody extends StatelessWidget {
   const NotesVieswBody({super.key});
 
@@ -14,54 +16,20 @@ class NotesVieswBody extends StatelessWidget {
             height: 50,
           ),
           const CustomAppBar(),
-          NoteItem()
+
         ],
       ),
     );
   }
 }
 
-class NoteItem extends StatelessWidget {
-  const NoteItem({super.key});
+
+
+class NoteslistView extends StatelessWidget {
+  const NoteslistView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
-      decoration: BoxDecoration(
-          color: Colors.blue, borderRadius: BorderRadius.circular(16)),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          ListTile(
-              title: const Text(
-                'Flutter Tips',
-                style: const TextStyle(color: Colors.black, fontSize: 26),
-              ),
-              subtitle: Padding(
-                padding: const EdgeInsets.only(top: 24, bottom: 24),
-                child: const Text(
-                  'Build your career with Abanoub Nabil',
-                  style: TextStyle(
-                      color: Color.fromARGB(131, 0, 0, 0), fontSize: 20),
-                ),
-              ),
-              trailing: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.delete,
-                  color: Colors.black,
-                  size: 32,
-                ),
-              )),
-          Padding(
-            padding: const EdgeInsets.only(right: 24),
-            child: Text('March 6  2023',
-                style: TextStyle(
-                    color: Color.fromARGB(131, 0, 0, 0), fontSize: 16)),
-          )
-        ],
-      ),
-    );
+    return ListView.builder(itemBuilder :(context,index))
   }
 }
