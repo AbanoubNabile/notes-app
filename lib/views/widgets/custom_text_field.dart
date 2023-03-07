@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/views/widgets/constants.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key});
@@ -6,12 +7,13 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      cursorColor: ,
+      cursorColor: KprimaryColor,
       decoration: InputDecoration(
-          
+          hintText: 'Title',
+          hintStyle: TextStyle(color: KprimaryColor),
           border: buildBorder(),
           enabledBorder: buildBorder(),
-          focusedBorder: buildBorder(Color.fromARGB(255, 59, 75, 221))),
+          focusedBorder: buildBorder(KprimaryColor)),
     );
   }
 
