@@ -6,7 +6,9 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      cursorColor: ,
       decoration: InputDecoration(
+          
           border: buildBorder(),
           enabledBorder: buildBorder(),
           focusedBorder: buildBorder(Color.fromARGB(255, 59, 75, 221))),
