@@ -7,8 +7,15 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(16)),
-      ),
+          border: buildBorder(),
+          enabledBorder: buildBorder(),
+          focusedBorder: buildBorder(Color.fromARGB(255, 59, 75, 221))),
     );
+  }
+
+  OutlineInputBorder buildBorder([Color]) {
+    return OutlineInputBorder(
+        borderRadius: BorderRadius.circular(16),
+        borderSide: BorderSide(color: Color ?? Colors.black));
   }
 }
