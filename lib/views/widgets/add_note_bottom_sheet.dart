@@ -23,6 +23,9 @@ class AddNoteBottom extends StatelessWidget {
               hint: 'content',
               maxLine: 5,
             ),
+            SizedBox(
+              height: 16,
+            ),
             CustomButton()
           ],
         ),
