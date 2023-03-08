@@ -6,7 +6,7 @@ void main() async {
 }
 await Hive.initFlutter();
 
-Hive.openBox(); 
+ await Hive.openBox(kNotesBox); 
 class NotesApp extends StatelessWidget {
   const NotesApp({super.key});
 
