@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/widgets/constants.dart';
 import 'package:notes_app/views/widgets/custom_text_field.dart';
 
 import 'Custom_bottom.dart';
@@ -13,7 +12,7 @@ class AddNoteBottom extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: SingleChildScrollView(
         child: Column(
-          children: [
+          children: const [
             SizedBox(height: 35),
             CustomTextField(
               hint: 'Title',
