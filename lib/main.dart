@@ -4,6 +4,7 @@ import 'package:notes_app/views/notes_views.dart';
 void main() async {
   runApp(const NotesApp());
 }
+await Hive.initFlutter();
 
 class NotesApp extends StatelessWidget {
   const NotesApp({super.key});
