@@ -11,6 +11,13 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       onSaved: OnSaved,
+      validator: (value) {
+        if (value?.isEmpty ?? true) {
+          return 'field is required';
+        } else {
+          return null;
+        }
+      },
       cursorColor: KprimaryColor,
       maxLines: maxLine,
       decoration: InputDecoration(
