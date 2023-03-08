@@ -6,8 +6,11 @@ import 'package:flutter/material.dart';
 class NoteModel {
   @Hivefield(0)
   final String title;
+  @Hivefield(1)
   final String subTitle;
+  @Hivefield(2)
   final String date;
+  @Hivefield(3)
   final int color;
 
   NoteModel(this.date,
