@@ -27,12 +27,15 @@ class AddNotesForm extends StatefulWidget {
 }
 
 class _AddNotesFormState extends State<AddNotesForm> {
+  final GlobalKey<FormState> formkey = GlobalKey();
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
+  String? title, subTitle;
 
-  final GlobalKey<FormState> =GlobalKey();
-  
   @override
   Widget build(BuildContext context) {
     return Form(
+      key: formkey,
+      autovalidateMode: autovalidateMode,
       child: Column(
         children: const [
           SizedBox(height: 35),
